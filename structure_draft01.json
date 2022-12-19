@@ -1,0 +1,184 @@
+[
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "package.json",
+    "type": "file"
+  },
+  {
+    "name": "Procfile",
+    "type": "file"
+  },
+  {
+    "name": "README.md",
+    "type": "file"
+  },
+  {
+    "name": "app.js",
+    "type": "file"
+  },
+  {
+    "name": "bin",
+    "type": "directory",
+    "contents": [
+      {
+        "name": "www",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "config",
+    "type": "directory",
+    "contents": [
+      {
+        "name": "env",
+        "type": "directory",
+        "contents": []
+      },
+      {
+        "name": "config.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "controllers",
+    "type": "directory",
+    "contents": [
+      {
+        "name": "topics.js",
+        "type": "file"
+      },
+      {
+        "name": "cards.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "models",
+    "type": "directory",
+    "contents": [
+      {
+        "name": "topic.js",
+        "type": "file"
+      },
+      {
+        "name": "card.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "public",
+    "type": "directory",
+    "contents": [
+      {
+        "name": "images",
+        "type": "directory",
+        "contents": []
+      },
+      {
+        "name": "javascripts",
+        "type": "directory",
+        "contents": []
+      },
+      {
+        "name": "stylesheets",
+        "type": "directory",
+        "contents": [
+          {
+            "name": "style.css",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "routes",
+    "type": "directory",
+    "contents": [
+      {
+        "name": "index.js",
+        "type": "file"
+      },
+      {
+        "name": "users.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "test",
+    "type": "directory",
+    "contents": [
+      {
+        "name": "topics.test.js",
+        "type": "file"
+      },
+      {
+        "name": "cards.test.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "views",
+    "type": "directory",
+    "contents": [
+      {
+        "name": "topics",
+        "type": "directory",
+        "contents": [
+          {
+            "name": "index.hbs",
+            "type": "file"
+          },
+          {
+            "name": "new.hbs",
+            "type": "file"
+          },
+          {
+            "name": "show.hbs",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cards",
+        "type": "directory",
+        "contents": [
+          {
+            "name": "index.hbs",
+            "type": "file"
+          },
+          {
+            "name": "new.hbs",
+            "type": "file"
+          },
+          {
+            "name": "show.hbs",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "error.hbs",
+        "type": "file"
+      },
+      {
+        "name": "layout.hbs",
+        "type": "file"
+      },
+      {
+        "name": "index.hbs",
+        "type": "file"
+      }
+    ]
+  }
+  ]
+  
