@@ -1,0 +1,51 @@
+body {
+  background-color: bisque;
+}
+
+/* Style the tree container */
+#dynamic-directory-structure {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the tree nodes */
+#dynamic-directory-structure li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the tree nodes as folders */
+#dynamic-directory-structure li.folder {
+  background-image: url('folder.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-left: 20px;
+}
+
+/* Style the tree nodes as files */
+#dynamic-directory-structure li.file {
+  background-image: url('file.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-left: 20px;
+}
+
+/* Style the tree nodes as collapsed */
+#dynamic-directory-structure li.collapsed {
+  background-image: url('collapsed.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* Style the tree nodes as expanded */
+#dynamic-directory-structure li.expanded {
+  background-image: url('expanded.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* Style the tree nodes as selected */
+#dynamic-directory-structure li.selected {
+  background-color: #ccc;
+}
