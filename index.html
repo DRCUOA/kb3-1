@@ -1,17 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Google Material Design -->
   <title>Browser Mock</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="./main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-  <div id="dynamic-directory-structure">
-    <!-- script to insert tree structure here -->
+<body><div class="hero">
+  <h1>kb3-1</h1>
+</div>
+  <div id="tree">
+    <!-- The tree will be generated here -->
   </div>
-  
+  <div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        <div><h1 id="toc">Generic Guide</h1>
+         <p>
+            <a href="#_Toc122433401">
+                Creating an application that follows the Model-View-Controller (MVC)
+                design pattern.
+            </a>
+        </p>
+        <p>
+            <a href="#_Toc122433402">Introduction:</a>
+        </p>
+        
+        <p>
+            <a href="#_Toc122433403">Designing the model:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433404">Identify the data sources:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433405">Define the business logic:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433406">
+                Identify the goals and objectives of the application
+            </a>
+        </p>
+        <p>
+            <a href="#_Toc122433407">Gather requirements from stakeholders:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433408">Document the requirements:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433409">Capturing desired sequence logic:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433410">Managing routing:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433411">Designing the view:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433412">User experience (UX) design</a>
+        </p>
+        <p>
+            <a href="#_Toc122433413">UI design</a>
+        </p>
+        <p>
+            <a href="#_Toc122433414">Designing the controller:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433415">Code logic:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433416">Features:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433417">Code maintenance and avoiding scope creep:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433418">Code maintenance</a>
+        </p>
+        <p>
+            <a href="#_Toc122433419">Avoiding scope creep</a>
+        </p>
+        <p>
+            <a href="#_Toc122433420">Detail Instructions</a>
+        </p>
+        <p>
+            <a href="#_Toc122433421">Npm</a>
+        </p>
+        <p>
+            <a href="#_Toc122433422">Install the required dependencies</a>
+        </p>
+        <p>
+            <a href="#_Toc122433423">Set up your MVC directory structure</a>
+        </p>
+        <p>
+            <a href="#_Toc122433424">Define your models</a>
+        </p>
+        <p>
+            <a href="#_Toc122433425">Define your views</a>
+        </p>
+        <p>
+            <a href="#_Toc122433426">Define your controllers</a>
+        </p>
+        <p>
+            <a href="#_Toc122433427">Test your application</a>
+        </p>
+        <p>
+            <a href="#_Toc122433428">Development testing:</a>
+        </p>
+        <p>
+            <a href="#_Toc122433429">Debugging and IDE Add-Ons</a>
+        </p>
+        <p>
+            <a href="#_Toc122433430">Debugging</a>
+        </p>
+        <p>
+            <a href="#_Toc122433431">Add-Ons</a>
+        </p>
+        <p>
+            <a href="#_Toc122433432">Conclusion:</a>
+        </p>
+        <br clear="all"/>
+        <h1>
+        </h1>
+        <h1>
+            <a name="_Toc122433401">
+                Creating an application that follows the Model-View-Controller (MVC)
+                design pattern.
+            </a>
+        </h1><a href="#toc">Back</a>
+        <h2>
+            <a name="_Toc122433402">Introduction:</a>
+        </h2>
+        <p>
+            The Model-View-Controller (MVC) design pattern is a popular way to
+            structure web applications. It separates the application into three main
+            components: the model, which represents the data and the logic for
+            manipulating that data; the view, which represents the user interface and
+            is responsible for rendering the data from the model; and the controller,
+            which is the intermediary between the model and the view and handles the
+            routing of requests.
+        </p><a href="#toc">Back</a>
+        <p>
+            Using the MVC design pattern can help you to create a well-organized,
+            maintainable, and scalable web application. In this briefing document, we
+            will go over the key considerations to keep in mind when designing a web
+            application using the MVC pattern.
+        </p><a href="#toc">Back</a>
+        <h2>
+            <a name="_Toc122433403">Designing the model:</a>
+        </h2><a href="#toc">Back</a>
+        <p>
+            <a name="_Toc122433404">Identify the data sources:</a>
+            The first step in designing the model is to identify the sources of data
+            that the application will use. This may include external APIs, databases,
+            or other data sources. You will need to consider how to retrieve, process,
+            and store this data in a way that is efficient and scalable.
+        </p><a href="#toc">Back</a>
+        <p>
+            <a name="_Toc122433405">Define the business logic:</a>
+            The model should also contain the business logic for your application. This
+            includes the rules and processes for manipulating and managing the data,
+            such as validation, authentication, and authorization.
+        </p><a href="#toc">Back</a>
+        <p>
+            <a name="_Toc122433406">
+                Identify the goals and objectives of the application
+            </a><a href="#toc">Back</a>
+            : Before you begin designing your application, it is important to clearly
+            define the goals and objectives of the project. This will help to ensure
+            that you are focusing on the most important aspects of the application and
+            that you are able to deliver a product that meets the needs of your users.
+        </p><a href="#toc">Back</a>
+        <p>
+            <a name="_Toc122433407">Gather requirements from stakeholders:</a>
+            In order to define the requirements for your application, you will need to
+            gather input from a variety of stakeholders, including end users, business
+            owners, and project sponsors. This may involve conducting interviews,
+            surveys, or focus groups to gather information about the desired features
+            and functionality of the application.
+        </p><a href="#toc">Back</a>
+        <p>
+            <a name="_Toc122433408">Document the requirements:</a>
+            Once you have gathered the requirements from stakeholders, it is important
+            to document them in a clear and concise manner. This will help to ensure
+            that everyone on the project team has a clear understanding of the desired
+            features and functionality of the application.
+        </p><a href="#toc">Back</a>
+        <h3>
+            <a name="_Toc122433409">Capturing desired sequence logic:</a>
+        </h3>
+        <p><a href="#toc">Back</a>
+            Identify the user flows: To capture the desired sequence logic of your
+            application, you will need to identify the different user flows that are
+            possible within the application. This may include different paths that a
+            user can take based on their actions or different scenarios that may arise.
+        </p>
+        <p><a href="#toc">Back</a>
+            Create a flowchart: A flowchart is a graphical representation of the steps
+            that a user can take within an application. It can be a useful tool for
+            visualizing the control flow of the application and identifying potential
+            bottlenecks or issues.
+        </p>
+        <p><a href="#toc">Back</a>
+            Use pseudocode: Pseudocode is a way of writing out the logic of your
+            application in a structured and easy-to-read manner. It can be a helpful
+            tool for defining the control flow of your application and communicating it
+            to the rest of the team.
+        </p>
+        <h3><a href="#toc">Back</a>
+            <a name="_Toc122433410">Managing routing:</a>
+        </h3>
+        <p><a href="#toc">Back</a>
+            Use a router: To manage the routing of HTTP requests in your application,
+            it is a good idea to use a router. A router is a module that handles the
+            mapping of URLs to specific actions or functions within your application.
+        </p>
+        <p><a href="#toc">Back</a>
+            Define clear, logical routes: When defining your routes, it is important to
+            make them clear and logical. This will make it easier for other developers
+            to understand the flow of your application and for users to navigate the
+            application.
+        </p>
+        <p><a href="#toc">Back</a>
+            Use route groups: If you have a large number of routes in your application,
+            it can be helpful to group them together using route groups. This can make
+            your code more organized and easier to maintain.
+        </p>
+        <h2><a href="#toc">Back</a>
+            <a name="_Toc122433411">Designing the view:</a>
+        </h2>
+        <p><a href="#toc">Back</a>
+            <a name="_Toc122433412">User experience (UX) design</a>
+            : The view is responsible for the user interface of your application, so it
+            is important to consider the overall user experience when designing it.
+            This includes factors such as the layout, navigation, and overall look and
+            feel of the application.
+        </p>
+        <p><a href="#toc">Back</a>
+            <a name="_Toc122433413">UI design</a>
+            : In addition to the overall UX, you will also need to consider the
+            specific elements of the user interface, such as the layout of the pages,
+            the design of buttons and forms, and the use of color and typography.
+        </p>
+        <h2><a href="#toc">Back</a>
+            <a name="_Toc122433414">Designing the controller:</a>
+        </h2>
+        <p><a href="#toc">Back</a>
+            <a name="_Toc122433415">Code logic:</a>
+            The controller is responsible for handling requests from the user and
+            routing them to the appropriate model and view. When designing the
+            controller, you will need to consider the code logic for handling these
+            requests and routing them correctly.
+        </p>
+        <p><a href="#toc">Back</a>
+            <a name="_Toc122433416">Features:</a>
+            The controller is also responsible for implementing the features of your
+            application. This includes tasks such as handling user input, validating
+            data, and interacting with the model to retrieve and update data.
+        </p>
+        <h2><a href="#toc">Back</a>
+            <a name="_Toc122433417">Code maintenance and avoiding scope creep:</a>
+        </h2>
+        <p>
+            <a name="_Toc122433418">Code maintenance</a>
+            : It is important to design your application in a way that makes it easy to
+            maintain and update over time. This includes writing clean, well-organized
+            code and using appropriate design patterns and best practices.
+        </p>
+        <p><a href="#toc">Back</a>
+            <a name="_Toc122433419">Avoiding scope creep</a>
+            : It is also important to manage the scope of your project and avoid adding
+            unnecessary features or functionality. This can help to prevent delays and
+            keep the project on track.
+        </p>
+        <h1><a href="#toc">Back</a>
+            <a name="_Toc122433420">Detail Instructions</a>
+        </h1>
+        <h2>
+            <a name="_Toc122433421">Npm</a>
+        </h2>
+        <p>
+            Set up your project directory and initialize a Node.js project using npm.
+        </p>
+        <p><a href="#toc">Back</a>
+            <a name="_Toc122433422">Install the required dependencies</a>
+            , such as SQLite3, Handlebars, Bootstrap, and jQuery.
+        </p>
+        <p><a href="#toc">Back</a>
+            <a name="_Toc122433423">Set up your MVC directory structure</a>
+            . This typically involves creating separate directories for your models,
+            views, and controllers.
+        </p>
+        <p><a href="#toc">Back</a>
+            <a name="_Toc122433424">Define your models</a>
+            . In an MVC application, the model represents the data and the logic for
+            manipulating that data. In this case, you would use SQLite3 to create and
+            manage your database and define your models using JavaScript.
+        </p>
+        <p>
+            <a name="_Toc122433425">Define your views</a>
+            . In an MVC application, the view represents the user interface and is
+            responsible for rendering the data from the model. In this case, you would
+            use Handlebars as your templating engine and Bootstrap and jQuery for
+            styling and interactivity.
+        </p><a href="#toc">Back</a>
+        <p>
+            <a name="_Toc122433426">Define your controllers</a>
+            . In an MVC application, the controller is the intermediary between the
+            model and the view. It receives requests from the user, retrieves the
+            necessary data from the model, and sends it to the view to be rendered. In
+            this case, you would use JavaScript to define your controllers and handle
+            the routing of requests.
+        </p>
+        <p><a href="#toc">Back</a>
+            <a name="_Toc122433427">Test your application</a>
+            to ensure that everything is working as expected.
+        </p>
+        <p><a href="#toc">Back</a>
+            Testing is an important part of the development process and helps to ensure
+            that your application is functioning correctly and meeting the needs of
+            your users. There are two main types of testing that you should consider
+            when developing an application: development testing and user testing.
+        </p>
+        <p><a href="#toc">Back</a>
+            <a name="_Toc122433428">Development testing:</a>
+            Development testing is the process of testing your application during the
+            development process to ensure that it is functioning correctly and meeting
+            the requirements that have been defined. There are several different types
+            of development testing that you should consider, including:
+        </p>
+        <p><a href="#toc">Back</a>
+            Unit testing: Unit testing involves testing individual units or components
+            of your application in isolation to ensure that they are working correctly.
+            This can include testing functions, classes, or modules.
+        </p>
+        <p>
+            There are several npm libraries that can be useful for unit testing HTML,
+            Node.js, and SQL stack applications. Here are a few recommendations:
+        </p>
+        <p><a href="#toc">Back</a>
+            Jest: Jest is a popular JavaScript testing framework that is well-suited
+            for testing Node.js and React applications. It includes features such as
+            automatic mocking, snapshot testing, and parallel testing, making it a
+            powerful tool for testing a variety of applications.
+        </p>
+        <p><a href="#toc">Back</a>
+            Mocha: Mocha is another widely-used JavaScript testing framework that is
+            well-suited for testing Node.js applications. It is a flexible framework
+            that can be used with a variety of assertion libraries and test reporters.
+        </p>
+        <p><a href="#toc">Back</a>
+            Chai: Chai is an assertion library that can be used with a variety of
+            testing frameworks, including Mocha and Jest. It provides a range of assert
+            methods that can be used to test the behavior of your application.
+        </p>
+        <p><a href="#toc">Back</a>
+            Supertest: Supertest is a library that can be used to test HTTP endpoints
+            in a Node.js application. It allows you to send HTTP requests to your
+            application and make assertions about the response that is returned.
+        </p>
+        <p>
+            Nock: Nock is a library that can be used to mock HTTP requests in your
+            tests. This can be useful for testing the behavior of your application when
+            it depends on external APIs or other external resources.
+        </p><a href="#toc">Back</a>
+        <p>
+            When selecting npm libraries for unit testing your HTML, Node.js, and SQL
+            stack application, it is important to choose libraries that are compatible
+            with your stack and that provide the features that you need for your tests.
+            It may be helpful to research different options and read reviews and
+            documentation to determine which libraries are the best fit for your
+            project.
+        </p>
+        <p><a href="#toc">Back</a>
+            Integration testing: Integration testing involves testing the interaction
+            between different components of your application to ensure that they are
+            working together correctly. This can include testing the integration of
+            your application with external APIs or databases.
+        </p>
+        <p><a href="#toc">Back</a>
+            System testing: System testing involves testing the entire application as a
+            whole to ensure that it is functioning correctly and meeting the
+            requirements that have been defined. This can include testing the
+            application under different conditions, such as different user roles or
+            different data sets.
+        </p>
+        <h4><a href="#toc">Back</a>
+            User testing:
+        </h4>
+        <p>
+            User testing is the process of testing your application with real users to
+            ensure that it is user-friendly and meets their needs. User testing can be
+            conducted in a variety of ways, including:
+        </p>
+        <p>
+            Usability testing: Usability testing involves testing the ease of use and
+            effectiveness of your application with a group of users. This can include
+            tasks such as completing a form or navigating to a specific page.
+        </p><a href="#toc">Back</a>
+        <p>
+            User acceptance testing (UAT): UAT is a type of testing that involves
+            evaluating the application from the perspective of the end user. This can
+            include testing the application in a production-like environment and
+            gathering feedback from users on their experience.
+        </p>
+        <p>
+            By conducting both development testing and user testing, you can ensure
+            that your application is functioning correctly and meeting the needs of
+            your users. This can help to improve the quality of your application and
+            increase user satisfaction.
+        </p><a href="#toc">Back</a>
+        <h2>
+            <a name="_Toc122433429">Debugging and IDE Add-Ons</a>
+        </h2>
+        <h3>
+            <a name="_Toc122433430">Debugging</a>
+        </h3>
+        <p>
+            There are several npm libraries that can be useful for debugging HTML,
+            Node.js, and SQL stack applications as you code them. Here are a few
+            recommendations:
+        </p>
+        <p>
+            Debug: Debug is a small debugging utility that can be used to log messages
+            in your code. It is designed to be simple to use and can be configured to
+            only log messages at specific levels of verbosity.
+        </p><a href="#toc">Back</a>
+        <p>
+            Node Inspector: Node Inspector is a debugger for Node.js applications that
+            allows you to set breakpoints, inspect variables, and step through your
+            code. It can be used with a variety of popular web browsers, including
+            Chrome and Firefox.
+        </p>
+        <p><a href="#toc">Back</a>
+            Nodemon: Nodemon is a utility that automatically restarts your Node.js
+            application when it detects changes in your code. This can be helpful for
+            debugging, as it allows you to see the effects of your changes in
+            real-time.
+        </p>
+        <p><a href="#toc">Back</a>
+            SQLite Debugger: SQLite Debugger is a utility that can be used to debug
+            SQLite databases in Node.js applications. It allows you to execute SQL
+            queries and view the results, as well as inspect the structure and data of
+            your database.
+        </p>
+        <p>
+            Postman: Postman is a tool that allows you to make HTTP requests to your
+            application and view the responses. It can be useful for debugging HTTP
+            endpoints in your application and testing the behavior of your application
+            when it depends on external APIs or other external resources.
+        </p>
+        <p><a href="#toc">Back</a>
+            When selecting npm libraries for debugging your HTML, Node.js, and SQL
+            stack application, it is important to choose libraries that are compatible
+            with your stack and that provide the features that you need for your
+            debugging tasks. It may be helpful to research different options and read
+            reviews and documentation to determine which libraries are the best fit for
+            your project.
+        </p>
+        <h3>
+            <a name="_Toc122433431">Add-Ons</a>
+        </h3>
+        <p><a href="#toc">Back</a>
+            Here are a few recommended package add-ons that you may find useful when
+            coding an HTML, Node.js, and SQL stack application in Visual Studio Code
+            (VS Code) on a Mac:
+        </p>
+        <p>
+            ESLint: ESLint is a tool that helps you to identify and fix problems with
+            your JavaScript code. It can be configured to enforce specific coding
+            standards and can be integrated with VS Code to provide real-time feedback
+            on your code.
+        </p>
+        <p><a href="#toc">Back</a>
+            Prettier: Prettier is a tool that helps you to automatically format your
+            code according to a set of predefined rules. It can be integrated with VS
+            Code to provide real-time formatting as you type.
+        </p>
+        <p>
+            GitLens: GitLens is an extension that adds powerful Git functionality to VS
+            Code. It allows you to view the history of your code, compare changes, and
+            easily navigate between commits.
+        </p>
+        <p><a href="#toc">Back</a>
+            SQLite: SQLite is an extension that adds support for SQLite databases to VS
+            Code. It includes features such as syntax highlighting, code completion,
+            and the ability to execute SQL queries directly from the editor.
+        </p>
+        <p>
+            These are just a few examples of package add-ons that you may find useful
+            when coding an HTML, Node.js, and SQL stack application in VS Code on a
+            Mac. There are many other options available, and the best choice will
+            depend on your specific needs and preferences. It may be helpful to
+            research different options and read reviews and documentation to determine
+            which add-ons are the best fit for your project.
+        </p>
+        <h1><a href="#toc">Back</a>
+            <a name="_Toc122433432">Conclusion:</a>
+        </h1>
+        <p>
+            By following these guidelines and considering the key considerations for
+            each component of the MVC design pattern, you can create a well-designed
+            web application that is efficient, scalable, and maintainable. Also, you
+            can effectively define the requirements for your application, capture the
+            desired sequence logic, and manage the routing of HTTP requests in a way
+            that is maintainable and scalable.
+        </p><a href="#toc">Back</a>
+        
+        </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        <p>This is a Node.js app that helps you learn to code. It features a 'topic' approach, where each topic has a
+          number of related sub-topics and each sub-topic has any number of 'cards' that represent, together for each
+          overall topic, the body of knowledge that it required to be known to be competent in that topic.</p>
+        <p>It is study aid, where you create the content yourself from your learning and other projects you do to aquire
+          knowledge. The app gives a structure to make 'cards' which is the lowest level of detail you can add.</p>
+        <p>It's core features are:</p>
+        <ol>
+          <li>The app intended for multiple users.</li>
+          <li>A user must have a unique username, they can choose it (any string &lt; 15 chars is acceptable&gt;)</li>
+          <li>View all topics on a single page and use word search or filter to highlight matching topics.</li>
+          <li>Create new topics</li>
+          <li>Drill down from topic, the body of knowledge you need, e.g. 'design-patterns', to sub-topic, e.g.
+            'Singleton Pattern' to finally view 'cards' which are the sub-sub-sub topics, in this example, all things
+            you need to know to use the Singleton Pattern.</li>
+          <li>A template for cards is provided as a boostrap model which contents a html form. Form feature requirements
+            are:</li>
+          <ol>
+            <li>a radio button for the user to indicate if the card they want to create relates to an existing topic or
+              a new topic.</li>
+            <li>a radio button for the user to inidcate if the card they want to create relates to an existing sub-topic
+              or a new sub-topic.</li>
+          </ol>
+          <li>The form will use the inputs in 4.0.1 and 4.0.2 as logic to format/structure the remainder of the inputs
+            required asfollows:</li>
+          <ol>
+            <li>If 4.0.1 indicates a new topic, the form will revert to 'open' inputs that are not based on the existing
+              data from the database and if it indicates an existing topic, user must be presented with a list of all
+              existing topics in the database to choose one from.</li>
+            <li>The user must be able to select a topic and sub-topic, free or from existing entries under the topic in
+              the database based on the prior selections and input form 4.0.1 and 4.0.2.</li>
+            <li>When the user has selected, topic AND sub-topic from 4.2, they must be able to enter the details of the
+              card they want to create and provide a source for the card information and hyperlink to external reference
+              if appropriate for more information.</li>
+          </ol>
+        </ol>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        <h2>Technologies Used</h2>
+        <ul>
+          <li>Node.js</li>
+          <li>SQLite3</li>
+          <li>Handlebars</li>
+          <li>Bootstrap</li>
+          <li>JavaScript/jQuery</li>
+        </ul>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        <h2>Getting Started</h2>
+        <ol>
+          <li>Clone the repository: <code>git clone https://github.com/DRCUOA/kb3-1.git</code></li>
+          <li>Install the dependencies: <code>npm install</code></li>
+          <li>Start the app: <code>npm start</code></li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+  <!-- Google Material Design -->
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </body>
+
 </html>

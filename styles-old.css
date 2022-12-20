@@ -1,0 +1,35 @@
+/* Add some basic styling for the tree view */
+ul, ol, li {
+  list-style: none;
+  margin: 5px;
+  padding: 2px;
+  /* border: 1px solid rgba(255,69,0); */
+}
+
+
+
+#tree {
+  font-family: sans-serif;
+}
+
+/* Style the directories and files differently */
+#tree .directory {
+  cursor: pointer;
+  background-color: #999;
+  color: white;
+}
+
+#tree .file {
+  background-color: white;
+  color: black;
+}
+
+/* Style the expand/collapse icons */
+#tree .directory::before {
+  content: "+ ";
+  cursor: pointer;
+}
+
+#tree .directory.collapsed::before {
+  content: "- ";
+}

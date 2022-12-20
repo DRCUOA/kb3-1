@@ -1,51 +1,60 @@
-body {
-  background-color: bisque;
+#tree {
+  font-family: 'Roboto', sans-serif; /* use a consistent typeface */
 }
 
-/* Style the tree container */
-#dynamic-directory-structure {
+.hero {
+  background-image: url(https://picsum.photos/1920/1080);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(213, 200, 200);
+  text-align: center;
+  opacity: .8;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the directories and files differently, using primary and secondary colors */
+#tree .directory {
+  cursor: pointer;
+  color: white;
+  background-color: #3f51b5; /* primary color */
+}
+
+#tree .file {
+  color: #3f51b5; /* secondary color */
+  background-color: white;
+}
+
+/* Use consistent iconography for the expand/collapse functionality */
+#tree .directory::before {
+  content: "expand_more"; /* use an expand icon from the material design icon library */
+  font-family: 'Material Icons'; /* specify the font that contains the icon */
+  cursor: pointer;
+}
+
+#tree .directory.collapsed::before {
+  content: "expand_less"; /* use a collapse icon from the material design icon library */
+}
+
+/* Use media queries to adjust the layout and styling for different screen sizes */
+@media (max-width: 768px) {
+  #tree .directory::before {
+    /* adjust the font size of the expand/collapse icons for smaller screens */
+    font-size: 18px;
+  }
+}
+
+/* Use consistent spacing between elements */
+ul, ol, li {
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Style the tree nodes */
-#dynamic-directory-structure li {
-  margin: 0;
-  padding: 0;
-}
-
-/* Style the tree nodes as folders */
-#dynamic-directory-structure li.folder {
-  background-image: url('folder.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  padding-left: 20px;
-}
-
-/* Style the tree nodes as files */
-#dynamic-directory-structure li.file {
-  background-image: url('file.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  padding-left: 20px;
-}
-
-/* Style the tree nodes as collapsed */
-#dynamic-directory-structure li.collapsed {
-  background-image: url('collapsed.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-/* Style the tree nodes as expanded */
-#dynamic-directory-structure li.expanded {
-  background-image: url('expanded.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-/* Style the tree nodes as selected */
-#dynamic-directory-structure li.selected {
-  background-color: #ccc;
+  margin: 5px;
+  padding: 2px;
 }

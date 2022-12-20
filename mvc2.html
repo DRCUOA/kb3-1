@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Google Material Design -->
+  <title>Browser Mock</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body><div class="hero">
+  <h1>kb3-1</h1>
+</div>
+  <div id="tree">
+    <!-- The tree will be generated here -->
+  </div>
+  <div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        <p>This is a Node.js app that helps you learn to code. It features a 'topic' approach, where each topic has a
+          number of related sub-topics and each sub-topic has any number of 'cards' that represent, together for each
+          overall topic, the body of knowledge that it required to be known to be competent in that topic.</p>
+        <p>It is study aid, where you create the content yourself from your learning and other projects you do to aquire
+          knowledge. The app gives a structure to make 'cards' which is the lowest level of detail you can add.</p>
+        <p>It's core features are:</p>
+        <ol>
+          <li>The app intended for multiple users.</li>
+          <li>A user must have a unique username, they can choose it (any string &lt; 15 chars is acceptable&gt;)</li>
+          <li>View all topics on a single page and use word search or filter to highlight matching topics.</li>
+          <li>Create new topics</li>
+          <li>Drill down from topic, the body of knowledge you need, e.g. 'design-patterns', to sub-topic, e.g.
+            'Singleton Pattern' to finally view 'cards' which are the sub-sub-sub topics, in this example, all things
+            you need to know to use the Singleton Pattern.</li>
+          <li>A template for cards is provided as a boostrap model which contents a html form. Form feature requirements
+            are:</li>
+          <ol>
+            <li>a radio button for the user to indicate if the card they want to create relates to an existing topic or
+              a new topic.</li>
+            <li>a radio button for the user to inidcate if the card they want to create relates to an existing sub-topic
+              or a new sub-topic.</li>
+          </ol>
+          <li>The form will use the inputs in 4.0.1 and 4.0.2 as logic to format/structure the remainder of the inputs
+            required asfollows:</li>
+          <ol>
+            <li>If 4.0.1 indicates a new topic, the form will revert to 'open' inputs that are not based on the existing
+              data from the database and if it indicates an existing topic, user must be presented with a list of all
+              existing topics in the database to choose one from.</li>
+            <li>The user must be able to select a topic and sub-topic, free or from existing entries under the topic in
+              the database based on the prior selections and input form 4.0.1 and 4.0.2.</li>
+            <li>When the user has selected, topic AND sub-topic from 4.2, they must be able to enter the details of the
+              card they want to create and provide a source for the card information and hyperlink to external reference
+              if appropriate for more information.</li>
+          </ol>
+        </ol>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        <h2>Technologies Used</h2>
+        <ul>
+          <li>Node.js</li>
+          <li>SQLite3</li>
+          <li>Handlebars</li>
+          <li>Bootstrap</li>
+          <li>JavaScript/jQuery</li>
+        </ul>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        <h2>Getting Started</h2>
+        <ol>
+          <li>Clone the repository: <code>git clone https://github.com/DRCUOA/kb3-1.git</code></li>
+          <li>Install the dependencies: <code>npm install</code></li>
+          <li>Start the app: <code>npm start</code></li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+  <!-- Google Material Design -->
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</body>
+
+</html>
